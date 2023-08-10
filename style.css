@@ -23,6 +23,21 @@ body{
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 120px;
+    background: #00e9a5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
 .header-nav ul{
     list-style: none;
 } 
@@ -95,11 +110,12 @@ nav ul li a:hover{
     max-width: 100%;
     height: 768px;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-attachment: fixed;
     /* position: relative; */
     background-size: cover;
     background-image: url(images/dds.png);
+    background-attachment: fixed;
 }
 
 .header-heading{
@@ -147,9 +163,12 @@ nav ul li a:hover{
 }
 
 #about{
-    width: 100%;
+    /* width: 100%; */
+    max-width: 100%;
     height: 110vh;
     background-color: #04121c;
+   
+    
     display: flex;
     align-items: center;
     color: white;
@@ -160,7 +179,8 @@ nav ul li a:hover{
 
 .about-img{
     width: 100%;
-    background: #444;
+    
+    padding-left: 10rem;
 }
 
 .abt-text h2{
@@ -176,7 +196,6 @@ nav ul li a:hover{
 .abt-text{
     width: 90%;
     color: #fff;
-    background: #00e9a5;
     padding: 1rem 2rem;
 }
 .abt-text p{
@@ -202,12 +221,13 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 1rem;
 }
 
 .work-box{
     background-color: #fff;
-    width: 370px;
-    height: 550px;
+    width: 23.125rem;
+    height: 34.375rem;
     margin: 20px;
     border-radius: 10px;
     overflow: hidden;
@@ -241,15 +261,23 @@ nav ul li a:hover{
 .work-head{
     text-align: center;
     color: #fff;
-    margin: 20px 0px;
-    padding-bottom: 30px;
+   padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    
 }
 .work-head h1{
     font-size: 2.5rem;
 }
 
+.work-head h1 span{
+    color: var(--blue);
+}
+
 .work-head p{
-     color: #00e9a5;
+     color: var(--blue);
+    font-weight: 500;
+     font-size: 1.3rem;
 }
 
 #Contact{
@@ -265,6 +293,25 @@ nav ul li a:hover{
     flex-direction: column;
     
 }
+
+.work-head-contact{
+    text-align: center;
+    color: #fff;
+     padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 5rem;
+}
+
+.work-head-contact h1{
+    font-size: 2.5rem;
+}
+
+.work-head-contact p{
+    color: var(--blue);
+    font-weight: 500;
+     font-size: 1.3rem;}
+
 
 .contact-info{
     display: flex;
@@ -296,7 +343,7 @@ nav ul li a:hover{
   
   .card-icon{
     font-size: 28px;
-    background: rgba(0, 255, 128, 0.4);
+    background: rgba(0, 179, 255, 0.4);
     width: 60px;
     height: 60px;
     text-align: center;
@@ -307,7 +354,7 @@ nav ul li a:hover{
   
   .card:hover .card-icon{
     background: none;
-    color: #00e9a5;
+    color: var(--blue);
     transform: scale(1.6);
   }
   
@@ -330,7 +377,7 @@ nav ul li a:hover{
 
   .faLink{
     text-decoration: none;
-    color: inherit;
+    color: white;
   }
 
 .main-name{
@@ -342,16 +389,26 @@ nav ul li a:hover{
 }
 
 .main-name span{
-    color: #00e9a5;
+    color: var(--blue);
 }
 
-footer{
+.footer{
     
     color: #fff;
     position: relative;
-    bottom: 0;
+    height: 30px;
+    bottom: 0px;
+    left: 0px;
     width: 100%;
     text-align: center;
+    /* background: #444; */
+    background-color:#04121c;
+    
+}
+
+.footer p{
+    padding-top: 0.5rem;
+    font-size: 0.9rem;
 }
 
 
@@ -364,8 +421,8 @@ footer{
 .edu-header{
    
     justify-content: center;
-    background-color: #00e9a5;
-    box-shadow: 5px 10px 30px rgba(0, 255, 128, 0.4);
+    background-color: var(--blue);
+    box-shadow: 5px 10px 30px rgba(0, 179, 255, 0.4);
     border-radius: 10px;
     color: black;
     align-items: center;
@@ -385,15 +442,22 @@ footer{
 
 .education ul{
     display: none;
+    text-align: justify;
+}
+
+.education li{
+    text-align: justify;
 }
 
 .edulist2.display{
     display: block;
+    
 
 }
 
 .edulist1.show{
     display: block;
+    text-align: justify;
 }
 
 #mh-skills{
@@ -404,17 +468,18 @@ footer{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100%;
 }
 
 .container{
-    position: relative;
+    gap: 20px;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    padding-bottom: 5rem;
-    
+    /* flex-wrap: wrap; */
+    padding: 0px 10px;    
+    /* background: #00e9a5; */
     
 }
 
@@ -512,7 +577,7 @@ footer{
 }
 
   
-@media screen and (max-width:800px) {
+@media screen and (max-width:1065px) {
     .contact-info{
       flex-direction: column;
     }
@@ -520,6 +585,10 @@ footer{
       width: 100%;
       max-width: 300px;
       margin: 10px 0;
+    }
+
+    #Contact{
+        height: 120vh;
     }
 
     .header-heading h1{
@@ -554,7 +623,7 @@ footer{
   @media screen and (max-width:450px) {
 
     .header-heading h1{
-        background: #04010e;
+        /* background: #04010e; */
         font-size: 25px;
         border-radius: 7px;
     }
@@ -584,16 +653,151 @@ footer{
     }
 }
 
-@media screen and (max-width:465px) {
-    .edu-header h1{
-        /* font-size: 0.6rem; */
+@media screen and (max-width:440px) {
+    /* #about{
+        height: 130vh;
+    } */
+
+    .edulist2 li{
+        font-size: 0.8rem;
+    }
+
+    .edulist1 li{
+        font-size: 0.8rem;
     }
 }
 
-@media screen and (max-width:460px) {
-    #about{
-        /* height: 130vh; */
+
+
+@media screen and (max-width:465px) {
+    .education{
+        padding-left: 0px;
     }
 }
+
+@media screen and (max-width:420px) {
+    .education{
+        padding-right: 5rem;
+    }
+}
+
+@media screen and (max-width:1225px) {
+    .work-box{
+        width: 20rem;
+        height: 33rem;
+    }
+}
+@media screen and (max-width:1075px) {
+    .work-box{
+        width: 17rem;
+        height: 30rem;
+    }
+
+
+}
+
+@media screen and (max-width:925px) {
+    .work-box{
+        width: 14rem;
+        height: 30rem;
+    }
+
+    .work-heading h4{
+        padding-top: 1rem;
+    }
+
+    /* .project-container{
+        flex-direction: column;
+    } */
+}
+
+@media screen and (max-width:780px) {
+     .project-container{
+        flex-direction: column;
+    }
+
+    .work-box{
+        width: 20rem;
+        height: 33rem;
+    }
+
+    
+    #work{
+        height: 280vh;
+    }
+
+    #mh-skills{
+        height: 180vh;
+    }
+
+
+}
+
+@media screen and (max-width:368px) {
+    .work-head h1{
+        font-size: 1.9rem;
+    }
+
+    .work-box{
+        width: 18rem;
+        height: 33rem;
+    }
+
+    .abt-text p{
+        font-size: 0.9rem;
+    }
+
+    .about-img{
+        padding-left: 2rem;
+    }
+}
+
+@media screen and (max-width:317px) {
+    #about{
+        height: 120vh;
+    }
+}
+
+
+@media screen and (max-width:289px) {
+    #about{
+        height: 130vh;
+    }
+}
+
+@media screen and (max-width:317px) {
+
+}
+
+
+
+
+@media screen and (max-width:357px) {
+
+    .edulist2 li{
+        font-size: 0.7rem;
+    }
+
+    .edulist1 li{
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width:803px) {
+    #mh-skills{
+        height: 200vh;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .work-head-contact{
+        padding-top: 5rem;
+    }
+
+}
+
 
 

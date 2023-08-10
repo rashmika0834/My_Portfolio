@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <section id="Header">
+    <nav class="header-nav">    
+        <a class="logo" href="#">
+            <h1 class="main-name"><span>Ras</span>hmika</h1>
+        </a>
+        <i class="fas fa-bars" id="menu-icon"></i> 
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a> </li>
+            <li><a href="#about" >About</a> </li>
+            <li><a href="#work">Projects</a> </li>
+            <li><a href="#mh-skills">Skills</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="header-heading" data-aos="fade-down" data-aos-duration="1500">
+        <h2>Hi! I'm</h2>
+        <h1> <span>Rashmika</span> Pramodya</h1>
+        <h2>I'm a <span class = "multiple-texts"></span></h2>
+        <a class="header-btn" href="#"> Download CV</a>
+    </div>
+    </section>
+
+    <section id="about">
+
+        <div class="abt-text" data-aos="fade-up">
+            <h2>About <span> Me</span></h2>
+            <h3>I'm a fullstack Web developer </h3>
+            <p>I’m a highly motivated and adaptable individual with a passion for continuous
+                learning and exploring emerging technologies. Strong team player, adept at
+                self-directed learning, and friendly with exceptional collaborative skills.
+                Specializing in Net-Centric Applications, Mobile Computing, and Game
+                Development. Seeking to apply technical expertise to real-world problem solving.
+                </p>
+            <button class="header-btn"> Download CV</button>
+        </div>
+        
+        <div class="about-img" data-aos="fade-down">
+            <div class="education">
+                <button class="edu-header" onclick="EducationDrop()"> 
+                    <h1>Education <i class="fas fa-chevron-circle-down"></i></h1>
+                </button>
+                <ul id="edulist2" class="edulist2">
+                    <li>B.Sc. (Hons.) in Software Engineering <br>
+                        University of Kelaniya <br>
+                        2021 - 2025</li>
+                    <li>GCE A/L - Physical Science <br>
+                        Ananda College - Colombo 10 <br>
+                        Physical Stream</li>
+                </ul>
+            </div>
+
+            <div class="education">
+                <button class="edu-header" onclick="VoluntDrop()" > 
+                    <H1>Volunteering <i class="fas fa-chevron-circle-down"></i></H1>
+                </button>
+                
+                     <ul id="edulist1" class="edulist1">
+                        <li>B.Sc. (Hons.) in Software Engineering <br>
+                            University of Kelaniya <br>
+                            2021 - 2025</li>
+                        <li>GCE A/L - Physical Science <br>
+                            Ananda College - Colombo 10 <br>
+                            Physical Stream</li>
+                    </ul>
+                
+                   
+                </div>
+        </div>
+
+     
+    </section>
+    
+
+    <section id="work">
+        <div class="work-head">
+            <h1>Projects I have done</h1>
+            <p></p>
+        </div>
+        <div class="project-container">
+            <div class="work-box" data-aos="fade-right">
+             <div class="project-img">
+                <img src="images/Screenshot (69) 1.png" alt="">
+             </div>
+
+             <div class="work-heading">
+                <h4>The Parts Shop</h4>
+                <p>Full Stack E-Commerce website using HTML, CSS, JS, PHP and MySQL </p>
+                <a href="#" class="header-btn">Repo</a>
+            </div>
+
+            </div>
+
+            
+            <div class="work-box" data-aos="fade-down">
+                <div class="project-img">
+                    <img src="images/Screenshot (72).png" alt="">
+
+                </div>
+
+                <div class="work-heading">
+                    <h4>Castle Environment</h4>
+                    <p>Simple Castle Environment made using Unreal Engine 5 Game Engine </p>
+                    <a href="#" class="header-btn">Repo</a>
+                </div>
+            </div>
+            
+
+            <div class="work-box" data-aos="fade-left">
+                <div class="project-img">
+                    <img src="images/Screenshot (71).png" alt="">
+                </div>
+
+                <div class="work-heading">
+                    <h4>Phonez</h4>
+                    <p>Full stack Mobile Phone E-Commerce website made using Frameworks </p>
+                    <a href="#" class="header-btn">Repo</a>
+                </div>
+            </div>     
+        </div>
+    </section>
+
+    <section id="mh-skills" >
+        <div class="work-head" data-aos="fade-down">
+            <H1>My Skills</H1>
+        </div>
+
+        <div class="container" data-aos="fade-down">
+            <div class="progress" style="--i:85;--clr: #00abf0">
+                <h3>85 <span>%</span></h3>
+                <h4>html</h4>
+            </div>
+
+            <div class="progress" style="--i:75;--clr: #00abf0">
+                <h3>75 <span>%</span></h3>
+                <h4>CSS</h4>
+            </div>
+
+            <div class="progress" style="--i:55;--clr: #00abf0">
+                <h3>55 <span>%</span></h3>
+                <h4>Python</h4>
+            </div>
+
+          
+
+            <div class="progress" style="--i:60;--clr: #00abf0">
+                <h3>60<span>%</span></h3>
+                <h4>Java</h4>
+            </div>
+        </div>
+
+        <div class="container" data-aos="fade-up">
+            
+
+            <div class="progress" style="--i:65;--clr: #00abf0">
+                <h3>65 <span>%</span></h3>
+                <h4>React JS</h4>
+            </div>
+
+            <div class="progress" style="--i:60;--clr: #00abf0">
+                <h3>58 <span>%</span></h3>
+                <h4>PHP</h4>
+            </div>
+
+            <div class="progress" style="--i:51;--clr: #00abf0">
+                <h3>51 <span>%</span></h3>
+                <h4>MySQL</h4>
+            </div>
+
+            
+            </div>
+        </div>
+    </section>
+
+    <section id="Contact">
+        <div class="work-head" >
+            <h1>Contact</h1>
+            <p>Get in Touch</p>
+        </div>
+
+        <div class="inner-links">
+            <a href="https://www.linkedin.com/in/rashmika-pramod-319a311a2" class="faLink">  <div class="contact-info">
+                <div class="card" data-aos="zoom-out-down">
+                  <i class="card-icon fab fa-linkedin"></i>
+                  <p>email@domain.com</p>
+                </div>
+            </a> 
+          
+                <div class="card" data-aos="zoom-out-down">
+                  <i class="card-icon fas fa-envelope"></i>
+                  <p>rashmikapramodya@gmail.com</p>
+                </div>
+
+            <a href="tel:+94719133821" class="faLink">
+                <div class="card" data-aos="zoom-out-down">
+                  <i class="card-icon fas fa-mobile-alt"></i>        
+                  <p>+94719133821</p>
+                </div>
+            </a>
+             
+            <a href="" class="faLink">
+                <div class="card" data-aos="zoom-out-down">
+                  <i class="card-icon fab fa-medium"></i>
+                  <p>Blogs by Rashmika</p>
+                </div>
+            </a>
+          
+            <a href="" class="faLink">
+                <div class="card" data-aos="zoom-out-down">
+                    <i class="card-icon fab fa-facebook-square"></i>
+                    <p>Rashmika Pramod</p>
+                  </div>
+                </a>
+        </div>  
+       
+    </section>
+
+    
+    <footer>
+        <p>Copyright © 2023 Rashmika Pramodya | All Rights Reserved</p>
+    </footer>
+
+   
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+    <script> AOS.init(); </script>
+
+    <script>
+        let number = document.getElementById("number");
+        let counter = 0;
+        setInterval(() => {
+            if(counter == 65){
+                clearInterval();
+            }
+            else{
+                counter+=1;
+                number.innerHTML = counter + "%"
+            }
+            
+        } ,30)
+    </script>
+</body>
+</html>

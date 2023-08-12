@@ -162,6 +162,10 @@ nav ul li a:hover{
     box-shadow: 5px 10px 30px rgba(255, 255, 255, 0.4);
 }
 
+.multiple-texts{
+    color: rgb(116, 186, 232);
+}
+
 #about{
     /* width: 100%; */
     max-width: 100%;
@@ -179,8 +183,7 @@ nav ul li a:hover{
 
 .about-img{
     width: 100%;
-    
-    padding-left: 10rem;
+    text-align: center;
 }
 
 .abt-text h2{
@@ -197,6 +200,7 @@ nav ul li a:hover{
     width: 90%;
     color: #fff;
     padding: 1rem 2rem;
+    margin: 0 4rem;
 }
 .abt-text p{
     text-align: justify;
@@ -414,7 +418,8 @@ nav ul li a:hover{
 
 .education{
     position: relative;
-    padding-left: 2.5rem;
+    margin: 1rem 0;
+   
 }
 
 
@@ -547,6 +552,7 @@ nav ul li a:hover{
 
 /***********Media queries**********/
 
+
 @media(max-width: 850px){
     #menu-icon{
     display: block;
@@ -604,6 +610,10 @@ nav ul li a:hover{
         letter-spacing: 1px;
         margin: 0px;
     }    
+    #about{
+        display: flex;
+        flex-direction: column;
+    }  
 
   }
 
@@ -613,11 +623,7 @@ nav ul li a:hover{
         letter-spacing: 1px;
         margin: 0px;
     }   
-    #about{
-        display: flex;
-        flex-direction: column;
-    }  
-
+  
   }
 
   @media screen and (max-width:450px) {

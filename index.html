@@ -20,7 +20,7 @@
         </a>
         <i class="fas fa-bars" id="menu-icon"></i> 
         <ul class="navbar">
-            <li><a href="#" class="">Home</a> </li>
+            <li><a href="#" class="active">Home</a> </li>
             <li><a href="#about" >About</a> </li>
             <li><a href="#work">Projects</a> </li>
             <li><a href="#mh-skills">Skills</a></li>
@@ -30,7 +30,7 @@
     <div class="header-heading" data-aos="fade-down" data-aos-duration="1500">
         <h2>Hi! I'm</h2>
         <h1> <span>Rashmika</span> Pramodya</h1>
-        <h2>I'm a <span class = "multiple-texts"></span></h2>
+        <h2>I'm <span class = "multiple-texts"></span></h2>
         <a class="header-btn" href="images/Rashmika (5).pdf" download="Rashmika_Pramodya_CV"> Download CV</a>
     </div>
     </section>
@@ -199,7 +199,7 @@
                 <div class="contact-info">
                 <div class="card" data-aos="zoom-out-down">
                   <i class="card-icon fab fa-linkedin"></i>
-                  <p>email@domain.com</p>
+                  <p>Rashmika Pramod</p>
                 </div>
             </a> 
           
@@ -244,22 +244,17 @@
    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
 
     <script> AOS.init(); </script>
 
     <script>
-        let number = document.getElementById("number");
-        let counter = 0;
-        setInterval(() => {
-            if(counter == 65){
-                clearInterval();
-            }
-            else{
-                counter+=1;
-                number.innerHTML = counter + "%"
-            }
-            
-        } ,30)
+        const typed = new Typed('.multiple-texts', {
+            strings: ['a Web Developer.', 'an UI/UX Designer.', 'a blogger.','a Gamer.'],
+            typeSpeed: 50,
+            loop: true
+        });
+
     </script>
 </body>
 </html>

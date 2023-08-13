@@ -108,6 +108,7 @@ nav ul li a:hover{
 }
 
 #Header{
+    scroll-behavior: smooth;
     overflow-y: hidden;
     overflow-x: hidden;
     width: 100%;
@@ -870,6 +871,8 @@ nav ul li a:hover{
         text-align: center;
     }
 }
+
+
 
 html, body{
     overflow-x: hidden;

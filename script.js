@@ -27,6 +27,9 @@ window.scroll = () => {
     navbar.classList.remove('active');
 };
 
+
+
+
 // let sections = document.querySelectorAll('section');
 // let navLinks = document.querySelectorAll('#Header .navbar a');
 
@@ -66,6 +69,7 @@ window.onscroll = () => {
         }
     });
 };
+
 
 
 
